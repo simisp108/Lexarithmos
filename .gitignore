@@ -1,0 +1,21 @@
+#OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+#Environment and secrets
+.env
+
+#Build and dependency folders
+node_modules/
+dist/
+*.log
+
+#Temporary or generated files
+*.zip
+*.tmp
+*.sample
+
+#Git metadata
+.git/

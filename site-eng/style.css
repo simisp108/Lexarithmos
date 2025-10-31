@@ -3,19 +3,19 @@ html {
 }
 @font-face {
     font-family: "Roboto-Regular";
-    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto-Bold";
-    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+    src: url(fonts/Roboto/Roboto-Bold.ttf);
     font-weight:bold;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto-Italic";
-    src: url(Fonts/Roboto/Roboto-Italic.ttf);
+    src: url(fonts/Roboto/Roboto-Italic.ttf);
     font-weight: normal;
     font-style: italic;
 }

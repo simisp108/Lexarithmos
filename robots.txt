@@ -1,0 +1,7 @@
+# robots.txt for Lexarithmos
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://www.lexarithmos.ac.cy/sitemap.xml
