@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+    font-weight:bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(../fonts/roboto/Roboto-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+#header_grid {
+    display: grid;
+    grid-template-areas: 
+    "main_title"
+    "main_subtitle"
+    "nav";
+}
+#main_title {
+    display: flex;
+    margin: 0px;
+    padding: 3% 0 0;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto-Bold" , sans-serif;
+    font-size: 5vw;
+}
+#main_subtitle {
+    display: flex;
+    margin: 0px;
+    padding: 0 0 3%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto-Bold" , sans-serif;
+    font-size: 4vw;
+    border-bottom: 5px solid white;
+}
+#main_links {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    font-size: 2vw;
+    padding-bottom: 8px;
+    list-style: none;
+    text-decoration: none;
+}
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+.anchor {
+    display: block;
+    height: 5vh;
+    margin-top: -5vh;
+    visibility: hidden;
+}
+.external_link {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+body > header {
+    background-color: #3572EF;
+    color: white;
+    margin-bottom: 3vh;
+}
+#lexarithmos_logo {
+    text-align: center;
+}
+#main_content {
+    display: flex;
+    justify-content: space-around;
+}
+#main_content aside {
+    width: 25%;
+    justify-content: left;
+    margin: 0 auto auto 2vw;
+}
+#main_content>aside>section {
+    border: 5px solid #3572EF;
+    margin: 5vh 0px 5vh 0px;
+}
+#main_content>div {
+    width: 75%;
+}
+#main_content>div>article {
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    border: 5px solid #3572EF;
+    padding: 5%;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+body>main article{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+}
+h2{
+    text-align: center;
+}
+#Sign_up {
+    text-align: left;
+}
+#Sign_up li {
+    list-style: none;
+    text-align: match-parent;
+    padding: 10% 10% 5% 15%;    
+}
+#Sign_up a {
+    text-align: center;
+    padding: 5% 10% 5% 10%;
+    border: 3px solid #050C9C;
+    color: #3572EF;
+    background-color: #A7E6FF;
+    font-weight: bold;
+}
+#Contact_us {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
+    font-family: "Roboto-Italic", sans-serif;
+    padding-bottom: 5%;
+}
+#Contact_us li {
+    list-style: none;
+}
+#Contact_us img {
+    width: 3vw;
+    height: 3vw;
+}
+#Address {
+    flex: 3;
+    padding: 5% 5% 5% 0%;
+}
+#Phone {
+    flex: 1;
+    padding: 5% 5% 5% 0%;
+}
+#Email {
+    flex: 1;
+    padding: 5% 5% 5% 0%;
+}
+#Facebook {
+    flex: 1;
+    padding: 5% 5% 5% 0%;
+}
+#Facebook a {
+    padding: 5%;
+    color: #316FF6;
+}
+#Instagram {
+    flex: 1;
+    padding: 5% 5% 5% 0%;
+}
+#Instagram a {
+    padding: 5%;
+    color: #C13584;
+}
+#Photo_Swap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+    border: 5px solid #3572EF;
+    padding: 5%;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    margin: auto;
+}
+#swap_image {
+    width: 45vw;
+    object-fit: contain;
+}
+#button_image_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 1% 1% 1%;
+    text-align: center;
+}
+.image_button {
+    padding: 5% 0;
+    font-size: medium;
+    cursor: pointer;
+    width: 3vw;
+    height: 8vw;
+    background-color: #A7E6FF;
+    border-radius: 15%;
+    border: 2px solid #050C9C;
+    font-weight: bold;
+    color: #3572EF;
+}
+#last_image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 2%;
+}
+#next_image {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 2%;
+}
+#main_content footer a {
+    text-decoration: none;
+    font-family: "Roboto-Italic";
+}
+body > footer {
+    background-color: #A7E6FF;
+    display: flex;
+    margin-top: 0;
+}
+#footer_links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+#footer_links>div {
+    margin-left: 2vw;
+}
+#footer_links>div>li>a {
+    color: white;
+    text-decoration: none;
+}
+img {
+    border-radius: 10%;
+}
+hr {
+    color: #050C9C;
+}
