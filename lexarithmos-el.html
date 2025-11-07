@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="fonts/roboto/">
-    <script src="js/main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content = "Ιδιωτικό Φροντιστήριο Λεξάριθμος - Μαθήματα Ελληνικών και Μαθηματικών προετοιμασίας εξετάσεων των ιδιωτικών σχολείων">
     <meta name="keywords" content="Λεξάριθμος, Φροντιστήρια, Μαθηματικά, Ελληνικά, Ιδιωτικά σχολεία, Λευκωσία, Προεισαγωγικές">
     <meta name="author" content="Ιδιωτικό Φροντιστήριο Λεξάριθμος">
-    <link rel="alternate" href="https://www.lexarithmos.ac.cy/lexarithmos.html">
-    <link rel="canonical" hreflang="el" href="https://www.lexarithmos.ac.cy/lexarithmos-el.html">
+
+    <link rel="canonical" href="https://www.lexarithmos.ac.cy/lexarithmos-el.html">
+    <link rel="alternate" hreflang="en" href="https://www.lexarithmos.ac.cy/lexarithmos.html">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    
     <title>Ιδιωτικό Φροντιστήριο Λεξάριθμος</title>
 </head>
 <body>
-    <header id="header_grid">
-        <!-- make this a comment -->
-        <h1 id="main_title">Λεξάριθμος</h1>
-        <h2 id="main_subtitle"> Ιδιωτικό Φροντιστήριο</h2>
-        <nav>
-            <ul id = "main_links">
-                <li>
-                    <a href="#top" class="navbutton">Αρχική</a>
-                </li>
-                <li>
-                    <a href="#About_us_anchor" class="navbutton">About us</a>
-                </li>
-                <li>
-                    <a href="#Contact_us_anchor" class="navbutton">Επικοινωνία</a>
-                </li>
-                <li>
-                    <a href="#Sign_up_anchor" class="navbutton">Εγγραφή</a>
-                </li>
-            </ul>
-        </nav>
+    <a href="#content" class="visually-hidden-focusable skiplink">Skip to content</a>
+    <header id="header_grid" class="header">
+        <div class="container">
+            <!-- make this a comment -->
+            <h1 id="main_title">Λεξάριθμος</h1>
+            <h2 id="main_subtitle"> Ιδιωτικό Φροντιστήριο</h2>
+            <nav aria-label="Main">
+                <ul id = "main_links">
+                    <li>
+                        <a href="#header_grid" class="navbutton">Αρχική</a>
+                    </li>
+                    <li>
+                        <a href="#About_us_anchor" class="navbutton">Ποιοί είμαστε</a>
+                    </li>
+                    <li>
+                        <a href="#Contact_us_anchor" class="navbutton">Επικοινωνία</a>
+                    </li>
+                    <li>
+                        <a href="#Sign_up_anchor" class="navbutton">Εγγραφή</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+    <main id="content" class="container stack" tabindex="-1">
         <div id="lexarithmos_logo"><img src="images/lexarithmos-logo.jpg" alt="Λογότυπο Φροντιστηρίου"></div>
         <div id="main_content">
             <aside>
@@ -53,7 +57,7 @@
                     </article>
                     <nav>
                         <ul>
-                            <li><a href="" class="external_link" target="_blank">Εγγραφή</a></li>
+                            <li><a href="" class="external_link" target="_blank" rel="noopener noreferrer">Εγγραφή</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -66,13 +70,13 @@
                             <li id="Phone"><b>Τηλέφωνο Επικοινωνίας:</b> +357 22256099</li>
                             <li id="Email"><b>Email:</b> lexarithmos@hotmail.com</li>
                             <li id="Facebook">
-                                <a href="https://www.facebook.com/lexarithmos1406/" class="external_link" target="_blank">
-                                    <img src="Images/Facebook_Logo.png" alt="Facebook" width="20" height="20">
+                                <a href="https://www.facebook.com/lexarithmos1406/" class="external_link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/facebook-logo.png" alt="Facebook">
                                 </a>
                             </li>
                             <li id="Instagram">
-                                <a href="" class="external_link" target="_blank">
-                                    <img src="Images/Instagram_Logo.jpg" alt="Instagram" width="20" height="20">
+                                <a href="" class="external_link" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/instagram-logo.jpg" alt="Instagram">
                                 </a>
                             </li>
                         </ul>
@@ -96,17 +100,16 @@
                         </blockquote>
                     </main>
                     <footer>
-                        <a href="https://el.wiktionary.org/wiki/%CE%BB%CE%B5%CE%BE%CE%AC%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82" target="_blank">Τι είναι ο Λεξάριθμος;</a>
+                        <a href="https://el.wiktionary.org/wiki/%CE%BB%CE%B5%CE%BE%CE%AC%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82" target="_blank" rel="noopener noreferrer">Τι είναι ο Λεξάριθμος;</a>
                     </footer>
                 </article>
-                <section id="Photo_Swap">
+                <section id="Photo_Swap" class="gallery">
                     <h2>Η Ομάδα μας</h2>
-                    <div id="button_image_button">
-                        <button id="last_image" class="image_button" type="button">&lt;</button>
-                        <div id="Photo_Swap_image"><img src="images/teacher_1.jpg" alt="Our Teachers" id="swap_image"></div>
-                        <button id="next_image" class="image_button" type="button">&gt;</button>
-                    </div>
-                    <div id="Photo_Swap_caption">Η Φιλόλογος κα Άντρη</div>
+                    <figure>
+                        <img src="images/teacher_1.jpg" alt="Our Teachers" id="swap_image">
+                        <figcaption id="Photo_Swap_caption">Η Φιλόλογος κα Άντρη</figcaption>
+                    </figure>
+                    <div id="photo_dots" class="gallery-dots" role="tablist" aria-label="Teacher photos"></div>
                 </section>
                 <article>
                     <header>
@@ -115,11 +118,11 @@
                         <h2 id="Subjects">Μαθήματα</h2>
                         <h3>Τι διδάσκουμε</h3>
                     </header>
-                    <main>
+                    <section>
                         <p>Some text about Maths</p>
                         <p>Some text about Greek</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem minima animi nam ex expedita.</p>
-                    </main>
+                    </section>
                     <footer>
                         If you would like to sign up for our services you can head to the <a href="#Contact_us_anchor" class="internal_link">Contact us</a> section or to the <a href="#Sign_up_anchor" class="internal_link">Sign up</a> section to do it online.
                     </footer>
@@ -127,25 +130,21 @@
             </div>
         </div>
     </main>
-    <footer>
-        <section>
-            <nav>
-                <ul id="footer_links">
-                    <div>
-                        <li><a href="#top" class="internal_link">Αρχική</a></li>
-                        <li><a href="#About_us_anchor" class="internal_link">About us</a></li>
-                        <li><a href="#Contact_us_anchor" class="internal_link">Επικοινωνία</a></li>
-                        <li><a href="#Subjects_anchor" class="internal_link">Υπηρεσίες</a></li>
-                    </div>
-                    <div>
-                        <li><a href="" class="internal_link">Privacy Policy</a></li>
-                        <li><a href="" class="internal_link">Terms & Conditions</a></li>
-                        <li><a href="" class="internal_link">Cookie Policy</a></li>
-                        <li><a href="" class="internal_link"></a></li>
-                    </div>
+    <footer class="footer">
+        <div class="container">
+            <nav aria-label="Footer">
+                <ul id="footer_links" class="auto-grid">
+                    <li><a href="#header_grid" class="internal_link">Αρχική</a></li>
+                    <li><a href="#About_us_anchor" class="internal_link">About us</a></li>
+                    <li><a href="#Contact_us_anchor" class="internal_link">Επικοινωνία</a></li>
+                    <li><a href="#Subjects_anchor" class="internal_link">Υπηρεσίες</a></li>
+
+                    <li><a href="" class="internal_link">Πολιτική Απορρήτου</a></li>
+                    <li><a href="" class="internal_link">Όροι &amp; Προυποθέσεις</a></li>
+                    <li><a href="" class="internal_link">Cookie Policy</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
