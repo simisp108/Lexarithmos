@@ -24,10 +24,19 @@
       <nav aria-label="Main">
         <ul id="main_links">
           <li><a href="#header_grid" class="navbutton">Home</a></li>
-          <li><a href="#About_us_anchor" class="navbutton">About us</a></li>
-          <li><a href="#Contact_us_anchor" class="navbutton">Contact us</a></li>
-          <li><a href="#Sign_up_anchor" class="navbutton">Sign up</a></li>
+          <li><a href="#About" class="navbutton">About us</a></li>
+          <li><a href="#Contact" class="navbutton">Contact us</a></li>
+          <li><a href="#Sign_up" class="navbutton">Sign up</a></li>
         </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <span class="lang-label">Language:</span>
+        <span class="lang-current" aria-current="page">
+          <img src="images/flag-uk.svg" alt="English (current)" class="flag">
+        </span>
+        <a href="lexarithmos-el.html" lang="el" hreflang="el" aria-label="Switch to Greek">
+          <img src="images/flag-gr.svg" alt="Ελληνικά" class="flag">
+        </a>
       </nav>
     </div>
   </header>
@@ -47,71 +56,61 @@
       </section>
 
       <!-- About -->
-      <article id="About" class="card">
-        <header>
-          <span class="anchor" id="About_us_anchor"></span>
-          <h2 id="About_us">About us</h2>
+      <section id="About" class="card">
+        <h2>About us</h2>
+        <article>
           <h3>What is Lexarithmos?</h3>
-        </header>
-        <section>
           <p>Lexarithmos is a private institute teaching Mathematics and Greek to children ranging from Grade 4 to Grade 6 in primary school. Our aim is to prepare students in the best way possible and aid them in achieving their goals, either preparing them for public, or private secondary school.</p>
           <p>Our name comes from the concept of "Lexarithm", where each letter has an innate value, with each word's Lexarithm being the total value of all its letters. To calculate this sum, the word must be written in capital letters and using the table of values for each capital letter, one can calculate the Lexarithm of a word. As far as we know, this concept is exclusive to the Greek language.</p>
           <p>The Lexarithm of the word "Lexarithmos" is 525</p>
-          <blockquote>"Metron ariston"<cite></cite></blockquote>
-        </section>
+          <blockquote>"Metron ariston"</blockquote>
+        </article>
         <footer>
           <a href="https://el.wiktionary.org/wiki/%CE%BB%CE%B5%CE%BE%CE%AC%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82" target="_blank" rel="noopener noreferrer">What is a Lexarithm?</a>
         </footer>
-      </article>
+      </section>
 
       <!-- Meet the team  -->
       <section id="Photo_Swap" class="gallery card">
         <h2>Meet the team</h2>
         <figure>
-          <img src="images/teacher_1.jpg" alt="Our Teachers" id="swap_image">
+          <img src="images/teacher_1.jpg" alt="Our Teachers" id="swap_image" loading="lazy">
           <figcaption id="Photo_Swap_caption">Our Greek Teacher Ms Andri</figcaption>
         </figure>
         <div id="photo_dots" class="gallery-dots" role="tablist" aria-label="Teacher photos"></div>
       </section>
 
       <!-- Subjects -->
-      <article id="Subjects" class="card">
-        <header>
-          <span class="anchor" id="Subjects_anchor"></span>
-          <h2 id="Subjects_title">Subjects</h2>
+      <section id="Subjects" class="card">
+        <h2>Subjects</h2>
+        <article>
           <h3>What we teach</h3>
-        </header>
-        <section>
           <p>Some text about Maths</p>
           <p>Some text about Greek</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem minima animi nam ex expedita.</p>
-        </section>
+        </article>
         <footer>
-          If you would like to sign up for our services you can head to the <a href="#Contact_us_anchor" class="internal_link">Contact us</a> section or to the <a href="#Sign_up_form" class="internal_link">Sign up</a> section to do it online.
+          If you would like to sign up for our services you can head to the <a href="#Contact" class="internal_link">Contact us</a> section or to the <a href="#Sign_up" class="internal_link">Sign up</a> section to do it online.
         </footer>
-      </article>
+      </section>
 
       <!-- Sign Up -->
       <section id="Sign_up" class="card">
-        <span class="anchor" id="Sign_up_anchor"></span>
         <h2>Sign Up</h2>
         <article>
           <p>Click on the "Sign up" button to be redirected to our google docs sign up form and register for lessons for the upcoming academic year.</p>
         </article>
         <nav>
           <ul>
-            <li><a href="" class="external_link button" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+            <li><a href="#" class="external_link button" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
           </ul>
         </nav>
       </section>
 
       <!-- Contact -->
       <section id="Contact" class="card">
-        <span class="anchor" id="Contact_us_anchor"></span>
         <h2>Contact us</h2>
-
         <div class="contact-grid">
-
           <!-- Address card -->
           <div class="contact-card">
             <span class="icon" aria-hidden="true">
@@ -143,7 +142,7 @@
               <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
             </span>
             <h4 class="contact-title">Email</h4>
-            <p><a href="mailto:lexarithmos@hotmail.com">lexarithmos@hotmail.com</a></p>
+            <p><a href="mailto:lexarithmos2020@gmail.com">lexarithmos2020@gmail.com</a></p>
           </div>
 
           <!-- Social card -->
@@ -151,11 +150,11 @@
             <h4 class="contact-title">Find us</h4>
             <p>
               <a href="https://www.facebook.com/lexarithmos1406/" class="external_link" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook-logo.png" alt="Facebook" class="social-icon">
+                <img src="images/facebook-logo.png" alt="Facebook" class="social-icon" loading="lazy">
               </a>
               &nbsp;&nbsp;
-              <a href="" class="external_link" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram-logo.jpg" alt="Instagram" class="social-icon">
+              <a href="#" class="external_link" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-logo.jpg" alt="Instagram" class="social-icon" loading="lazy">
               </a>
             </p>
           </div>
@@ -169,15 +168,15 @@
   <footer class="footer">
     <div class="container">
       <nav aria-label="Footer">
-        <ul id="footer_links" class="auto-grid">
+        <ul id="footer_links">
           <li><a href="#header_grid" class="internal_link">Home</a></li>
-          <li><a href="#About_us_anchor" class="internal_link">About us</a></li>
-          <li><a href="#Contact_us_anchor" class="internal_link">Contact us</a></li>
-          <li><a href="#Subjects_anchor" class="internal_link">Services</a></li>
+          <li><a href="#About" class="internal_link">About us</a></li>
+          <li><a href="#Contact" class="internal_link">Contact us</a></li>
+          <li><a href="#Subjects" class="internal_link">Services</a></li>
 
-          <li><a href="" class="internal_link">Privacy Policy</a></li>
-          <li><a href="" class="internal_link">Terms &amp; Conditions</a></li>
-          <li><a href="" class="internal_link">Cookie Policy</a></li>
+          <li><a href="#" class="internal_link">Privacy Policy</a></li>
+          <li><a href="#" class="internal_link">Terms &amp; Conditions</a></li>
+          <li><a href="#" class="internal_link">Cookie Policy</a></li>
         </ul>
       </nav>
     </div>
