@@ -1,4 +1,4 @@
-<!-- index.html - simple language selector -->
+<!-- index.html - language selector -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,25 +25,44 @@
   <main class="gateway">
     <!-- Dev tip: add #preview to URL to pause redirects while inspecting -->
     <img class="logo" src="images/icon-512.png" alt="Lexarithmos logo">
-    <section class="card container" aria-labelledby="gw-title">
 
+    <section class="card" aria-labelledby="gw-title">
       <h1 id="gw-title" class="title">Καλωσήρθατε στον Λεξάριθμο</h1>
-      <p class="subtitle">Please choose your preferred language / Επιλέξτε την γλώσσα προτίμησης</p>
+
+      <!-- Split subtitle: each side centres above its respective tile -->
+      <div class="lang-head" aria-hidden="false">
+        <div class="subtitle subtitle-en" lang="en">
+          Choose your preferred language
+        </div>
+        <div class="subtitle subtitle-el" lang="el">
+          Επιλέξτε τη γλώσσα προτίμησης
+        </div>
+      </div>
 
       <div class="lang-grid" role="list">
-        <a role="listitem" class="lang-tile lang-en" href="lexarithmos.html" data-lang="en" aria-label="Enter the English site">
+        <a role="listitem"
+           class="lang-tile lang-en"
+           href="lexarithmos.html"
+           data-lang="en"
+           aria-label="Enter the English site">
           <img class="lang-flag" src="images/flag-uk.svg" alt="English">
-          <span class="lang-name">English</span>
+          <span class="lang-name" lang="en">English</span>
         </a>
 
-        <a role="listitem" class="lang-tile lang-el" href="lexarithmos-el.html" data-lang="el" aria-label="Μετάβαση στον ελληνικό ιστότοπο">
+        <a role="listitem"
+           class="lang-tile lang-el"
+           href="lexarithmos-el.html"
+           data-lang="el"
+           aria-label="Μετάβαση στον ελληνικό ιστότοπο">
           <img class="lang-flag" src="images/flag-gr.svg" alt="Ελληνικά">
-          <span class="lang-name">Ελληνικά</span>
+          <span class="lang-name" lang="el">Ελληνικά</span>
         </a>
       </div>
 
       <noscript>
-        <p style="margin-top:1rem;opacity:.8">JavaScript is disabled. Use the links above — your language preference won’t be remembered.</p>
+        <p style="margin-top:1rem;opacity:.8">
+          JavaScript is disabled. Use the links above — your language preference won’t be remembered.
+        </p>
       </noscript>
     </section>
   </main>
