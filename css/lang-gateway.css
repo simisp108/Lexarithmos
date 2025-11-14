@@ -24,7 +24,7 @@
 
   /* Layout */
   --page-pad-y: clamp(8px, 2vh, 16px);
-  --overlap: 40vh; /* overlap amount between logo and card */
+  --overlap: 25vh; /* overlap amount between logo and card */
 }
 
 /* Reset / base */
