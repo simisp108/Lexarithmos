@@ -24,7 +24,7 @@
 
   /* Layout */
   --page-pad-y: clamp(8px, 2vh, 16px);
-  --overlap: 25vh; /* overlap amount between logo and card */
+  --overlap: 100px; /* overlap amount between logo and card */
 }
 
 /* Reset / base */
@@ -219,6 +219,7 @@ html.leaving body {
 
 /* Very small screens – tiny tightening only, still 2 columns */
 @media (max-width: 360px) {
+  :root{--overlap:20px}
   .card {
     padding: 12px 10px 16px;
     border-width: 4px;
