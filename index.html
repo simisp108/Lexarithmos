@@ -3,18 +3,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lexarithmos — Language Selection</title>
-  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lexarithmos — Choose English or Ελληνικά.">
+  <title>Lexarithmos — Choose Language / Επιλογή Γλώσσας</title>
+
+  <link rel="stylesheet" href="css/lang-gateway.css">
+
+  <!-- SEO / discovery -->
+  <link rel="alternate" hreflang="en" href="/lexarithmos.html">
+  <link rel="alternate" hreflang="el" href="/lexarithmos-el.html">
+  <link rel="canonical" href="/">
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Tab icon -->
+  <link rel="icon" href="images/icon-512.png">
+
+  <script src="js/lang-gateway.js" defer></script>
 </head>
 <body>
-  <main style="text-align:center; margin-top:10%;">
-    <h1>Welcome to Lexarithmos</h1>
-    <p>Select your language:</p>
-    <ul>
-      <a href="lexarithmos.html">English</a> |
-      <a href="lexarithmos-el.html" hreflang="el">Ελληνικά</a>
-    </ul>
+  <main class="gateway">
+    <!-- Dev tip: add #preview to URL to pause redirects while inspecting -->
+    <img class="logo" src="images/icon-512.png" alt="Lexarithmos logo">
+    <section class="card container" aria-labelledby="gw-title">
+
+      <h1 id="gw-title" class="title">Καλωσήρθατε στον Λεξάριθμο</h1>
+      <p class="subtitle">Please choose your preferred language / Επιλέξτε την γλώσσα προτίμησης</p>
+
+      <div class="lang-grid" role="list">
+        <a role="listitem" class="lang-tile lang-en" href="lexarithmos.html" data-lang="en" aria-label="Enter the English site">
+          <img class="lang-flag" src="images/flag-uk.svg" alt="English">
+          <span class="lang-name">English</span>
+        </a>
+
+        <a role="listitem" class="lang-tile lang-el" href="lexarithmos-el.html" data-lang="el" aria-label="Μετάβαση στον ελληνικό ιστότοπο">
+          <img class="lang-flag" src="images/flag-gr.svg" alt="Ελληνικά">
+          <span class="lang-name">Ελληνικά</span>
+        </a>
+      </div>
+
+      <noscript>
+        <p style="margin-top:1rem;opacity:.8">JavaScript is disabled. Use the links above — your language preference won’t be remembered.</p>
+      </noscript>
+    </section>
   </main>
 </body>
 </html>
