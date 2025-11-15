@@ -186,23 +186,42 @@ ul {padding-left: 1.25rem;}
 #main_links {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 8px;
+    justify-content: space-evenly;
+    gap: var(--s-2);
+    padding: var(--s-2);
+    flex-wrap: wrap;
     list-style: none;
 }
 #main_links .navbutton {
   color: #fff;               
   font-style: normal;
   text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
   text-underline-offset: 0.2em;
-  font-size: var(--fs-h3);
-  line-height: 1.4;
+  font-size: clamp(1rem, 4.2vw, 1.25rem);
+  line-height: 1.35;
   padding: 0.35rem 0.5rem;
   transition: color .16s, text-decoration-color .16s;
 }
 #main_links .navbutton:hover {
   color: var(--accent-green); 
   text-decoration: underline;
+}
+@media (max-width: 560px) {
+  #main_links {
+    justify-content: center;
+    gap: var(--s-2);
+    padding-inline: var(--s-1);
+  }
+  #main_links .navbutton {
+    font-size: clamp(0.98rem, 4.8vw, 1.10rem);
+    padding: 0.35rem 0.6rem;
+  }
+}
+@media (max-width:300px) {
+  #main_links {gap: var(--s-1); padding-inline: var(--s-1);}
+  #main_links .navbutton {font-size: clamp(0.95rem, 4.5vw, 1.05rem); padding: 0.3rem 0.5rem;}
 }
 .lang-switch {
   display: flex;
@@ -254,6 +273,13 @@ body > header {
     margin-bottom: 3vh;
 }
 #lexarithmos_logo {text-align: center;}
+#lexarithmos_logo img {
+  display: block;
+  margin-inline: auto;
+  width: clamp(140px, 60vw, 400px);
+  max-width: 90%;
+  height: auto;
+}
 .header::after {
   content: ""; display: block; height: 4px; background: var(--accent-green);
   border-radius: 999px 999px 0 0; margin-top: var(--s-4);
@@ -272,6 +298,8 @@ body > header {
   #Subjects     { grid-column: 1 / -1; }
   #Contact      { grid-column: 1 / -1; }
   #Sign_up      { grid-column: 1 / -1; }
+  #About        { grid-column: 1 / -1; }
+  #Photo_Swap   { grid-column: 1 / -1; }
 }
 
 #New_Service.card { background: var(--attention-bg); border-color: var(--attention-edge);}
