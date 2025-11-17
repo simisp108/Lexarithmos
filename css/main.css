@@ -453,6 +453,7 @@ body > footer .container {
     display: grid;
     gap: var(--s-3);
     justify-items: center;
+    text-align: center;
 }
 .gallery figure {
     margin: 0;
@@ -465,7 +466,6 @@ body > footer .container {
     width: 80%;
     height: auto;
     display: block;
-    object-fit: contain;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: opacity .35s ease;
