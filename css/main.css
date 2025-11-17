@@ -456,13 +456,13 @@ body > footer .container {
 }
 .gallery figure {
     margin: 0;
-    width: 100%;
+    width: 90%;
     max-width: min(800px,95vw);
     justify-items: center;
 
 }
 .gallery img {
-    width: 80%;
+    width: 90%;
     height: auto;
     max-width: 90%;
     display: block;
