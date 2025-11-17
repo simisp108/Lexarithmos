@@ -460,7 +460,7 @@ body > footer .container {
 }
 .gallery img {
     width: auto;
-    height: 50vh;
+    height: min(50vh,50vw);
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
