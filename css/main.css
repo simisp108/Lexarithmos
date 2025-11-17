@@ -465,6 +465,7 @@ body > footer .container {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: contain;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: opacity .35s ease;
