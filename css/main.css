@@ -459,8 +459,8 @@ body > footer .container {
     max-width: min(800px, 95vw);
 }
 .gallery img {
-    width: auto;
-    height: min(50vh,50vw);
+    width: clamp(150px, 60vw, 600px);
+    height: auto;
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
