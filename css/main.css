@@ -46,9 +46,9 @@
 
     /* Fluid typography */
     --fs-body: 1rem; /* 16px base */
-    --fs-h1: clamp(2rem, 3.5vw, 3rem);
-    --fs-h2: clamp(1.5rem, 2.8vw, 2.25rem);
-    --fs-h3: clamp(1.25rem, 2.2vw, 1.5rem);
+    --fs-h1: clamp(2rem, 3.6vw, 3rem);
+    --fs-h2: clamp(1.5rem, 2.7vw, 2.25rem);
+    --fs-h3: clamp(1.25rem, 1.8vw, 1.5rem);
 }
 
 /* Base element defaults */
@@ -231,7 +231,7 @@ ul {padding-left: 1.25rem;}
     font-weight: 600;
     white-space: nowrap;
     text-underline-offset: 0.2em;
-    font-size: clamp(0.8rem, 3vw, 1.4rem);
+    font-size: clamp(1rem, 3vw, 1.4rem);
     line-height: 1.35;
     padding: 0.25rem 0.4rem;
     transition: color .16s, text-decoration-color .16s;
@@ -249,7 +249,7 @@ ul {padding-left: 1.25rem;}
     gap: var(--s-3);
     margin-top: var(--s-2);
     margin-bottom: var(--s-2);
-    font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 .header .lang-switch .lang-label {
     color: #fff;
@@ -459,8 +459,8 @@ body > footer .container {
     max-width: min(800px, 95vw);
 }
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 50vh;
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
