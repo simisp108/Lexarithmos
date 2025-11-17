@@ -470,6 +470,7 @@ body > footer .container {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: opacity .35s ease;
+    align-items: center;
 }
 /*
 When the actual pictures are placed in:
