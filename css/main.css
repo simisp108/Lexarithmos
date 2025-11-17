@@ -453,7 +453,6 @@ body > footer .container {
     display: grid;
     gap: var(--s-3);
     justify-items: center;
-    text-align: center;
 }
 .gallery figure {
     margin: 0;
