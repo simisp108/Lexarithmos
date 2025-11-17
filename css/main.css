@@ -456,7 +456,7 @@ body > footer .container {
 }
 .gallery figure {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     max-width: min(800px,95vw);
     justify-items: center;
 
