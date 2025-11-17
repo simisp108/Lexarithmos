@@ -462,7 +462,7 @@ body > footer .container {
 
 }
 .gallery img {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: block;
     border-radius: var(--radius);
