@@ -455,13 +455,18 @@ body > footer .container {
     justify-items: center;
 }
 .gallery figure {
-    margin: 0;
-    max-width: min(800px, 95vw);
+    margin: 0 auto;
+    width: 100%;
+    max-width: min(800px,95vw);
+    justify-items: center;
+
 }
 .gallery img {
-    width: clamp(150px, 60vw, 600px);
+    width: 90%;
     height: auto;
+    max-width: 90%;
     display: block;
+    object-fit: contain;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: opacity .35s ease;
