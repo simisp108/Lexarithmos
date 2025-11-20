@@ -373,7 +373,7 @@ body > main article {
 .signup-options-intro {text-align: center;}
 .signup-options-grid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: var(--s-3);
 }
