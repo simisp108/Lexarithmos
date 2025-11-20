@@ -382,6 +382,7 @@ body > main article {
 .signup-grade {text-align: center; flex: 1 1 0;}
 .signup-options-grid .button {
     width: 100%;
+    max-width: 10ch;
     min-width: 7ch;
     padding: 0.5rem 0.5rem;
     font-size: clamp(0.85rem, 2.8vw, 1rem);
