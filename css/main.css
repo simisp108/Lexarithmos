@@ -367,17 +367,26 @@ body > main article {
     background-color: var(--signup-bg);
     display: grid;
     gap: var(--s-3);
-    justify-items: center;
+    justify-items: stretch;
 }
 .signup-options-title {margin: 0; color: var(--accent); text-align: center;}
 .signup-options-intro {text-align: center;}
 .signup-options-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: stretch;
     gap: var(--s-3);
+    width: 100%;
 }
-.signup-grade {text-align: center; flex: 0 0 auto;}
+.signup-grade {text-align: center; flex: 1 1 0;}
+.signup-options-grid .button {
+    width: 100%;
+    min-width: 7ch;
+    padding: 0.5rem 0.5rem;
+    font-size: clamp(0.85rem, 2.8vw, 1rem);
+    white-space: nowrap;
+}
 
 
 /* CONTACT */
