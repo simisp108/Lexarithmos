@@ -358,6 +358,30 @@ body > main article {
     margin: 0;
     list-style: none;
 }
+.signup-primary {margin-top: var(--s-2);}
+.signup-options {
+    margin-top: var(--s-4);
+    padding: var(--s-4);
+    border-radius: var(--radius);
+    border: 2px solid var(--accent);
+    background-color: var(--signup-bg);
+    display: grid;
+    gap: var(--s-3);
+    justify-items: center;
+}
+.signup-options-title {margin: 0; color: var(--accent); text-align: center;}
+.signup-options-intro {text-align: center;}
+.signup-options-grid {
+    display: grid;
+    gap: var(--s-3);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.signup-grade {text-align: center;}
+@media (min-width: 600px) {
+    .signup-options-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
 
 /* CONTACT */
 #Contact.card {

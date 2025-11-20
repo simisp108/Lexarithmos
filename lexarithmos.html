@@ -97,13 +97,64 @@
       <section id="Sign_up" class="card">
         <h2>Sign Up</h2>
         <article>
-          <p>Click on the "Sign up" button to be redirected to our google docs sign up form and register for lessons for the upcoming academic year.</p>
+          <p>Click on the "Sign up" button to choose the grade you are registering for the upcoming academic year.</p>
         </article>
-        <nav>
+        <nav class="signup-primary">
           <ul>
-            <li><a href="#" class="external_link button" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+            <li>
+              <a
+                href="#signup_options"
+                class="button"
+                id="signup_toggle"
+                aria-expanded="false"
+                aria-controls="signup_options"
+              >
+                Sign Up
+              </a>
+            </li>
           </ul>
         </nav>
+        <section
+          id = "signup_options"
+          class="signup-options"
+          aria-label="Choose year group for signup"
+        >
+          <h3 class="signup-options-title">Choose Υear</h3>
+          <p class="signup-options-intro">
+            Select the desired year group below to open the respective form in a new tab
+          </p>
+          <div class="signup-options-grid">
+            <!-- Year 4 -->
+            <a
+              href="#"
+              class="external-link button signup-grade"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Year 4
+            </a>
+
+            <!-- Year 5 -->
+            <a
+              href="#"
+              class="external-link button signup-grade"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Year 5
+            </a>
+
+            <!-- Year 6 -->
+            <a
+              href="#"
+              class="external-link button signup-grade"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Year 6
+            </a>
+          </div>
+        </section>
       </section>
 
       <!-- Contact -->

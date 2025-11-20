@@ -97,13 +97,67 @@
       <section id="Sign_up" class="card">
         <h2>Εγγραφή</h2>
         <article>
-          <p>Για να εγγραφείτε στο φροντιστήριό μας πληκτρολογήστε το κουμπί 'Εγγραφή' και κατευθυνθείτε προς τη google docs φόρμα εγγραφής μας.</p>
+          <p>Για να εγγραφείτε στο φροντιστήριό μας πληκτρολογήστε το κουμπί 'Εγγραφή' και επιλέξτε τάξη για να κατευθυνθείτε προς την αντίστοιχη google docs φόρμα εγγραφής μας.</p>
         </article>
-        <nav>
+        <nav class="signup-primary">
           <ul>
-            <li><a href="#" class="external_link button" target="_blank" rel="noopener noreferrer">Εγγραφή</a></li>
+            <li>
+              <a
+                href="#signup_options"
+                class="button"
+                id="signup_toggle"
+                aria-expanded="false"
+                aria-controls="signup_options"
+              >
+                Εγγραφή
+              </a>
+            </li>
           </ul>
         </nav>
+        
+        <!-- Expandable signup -->
+        <section
+          id="signup_options"
+          class="signup-options"
+          aria-label="Επιλογή τάξης για εγγραφή"
+        >
+          <h3 class="signup-options-title">Επιλέξτε Τάξη</h3>
+          <p class="signup-options-intro">
+            Επιλέξτε την τάξη για την οποία θα κάνετε εγγραφή για να ανοίξει η φόρμα σε νέο παράθυρο.
+          </p>
+
+          <div class="signup-options-grid">
+            <!-- Year 4 -->
+            <a
+              href="#"
+              class="external-link button signup-grade"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Δ' Τάξη
+            </a>
+
+            <!-- Year 5 -->
+            <a
+              href="#"
+              class="external-link button signup-grade"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ε' Τάξη
+            </a>
+
+            <!-- Year 6 -->
+            <a
+              href="#"
+              class="external-link button signup-grade"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ΣΤ' Τάξη
+            </a>
+          </div>
+        </section>
       </section>
 
       <!-- Contact -->
